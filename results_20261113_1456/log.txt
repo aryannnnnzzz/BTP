@@ -1,0 +1,222 @@
+
+
+######## tune_stage1 ########
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 6 workers.
+EO iter   1/60  best J = 151.867
+EO iter   2/60  best J = 118
+EO iter   3/60  best J = 1.86997
+EO iter   4/60  best J = 1.73243
+EO iter   5/60  best J = 1.24335
+EO iter   6/60  best J = 1.01656
+EO iter   7/60  best J = 0.795717
+EO iter   8/60  best J = 0.795717
+EO iter   9/60  best J = 0.795717
+EO iter  10/60  best J = 0.795717
+EO iter  11/60  best J = 0.749528
+EO iter  12/60  best J = 0.749528
+EO iter  13/60  best J = 0.749528
+EO iter  14/60  best J = 0.749528
+EO iter  15/60  best J = 0.723785
+EO iter  16/60  best J = 0.710836
+EO iter  17/60  best J = 0.544627
+EO iter  18/60  best J = 0.544627
+EO iter  19/60  best J = 0.544627
+EO iter  20/60  best J = 0.544627
+EO iter  21/60  best J = 0.544627
+EO iter  22/60  best J = 0.483005
+EO iter  23/60  best J = 0.483005
+EO iter  24/60  best J = 0.483005
+EO iter  25/60  best J = 0.483005
+EO iter  26/60  best J = 0.438392
+EO iter  27/60  best J = 0.438392
+EO iter  28/60  best J = 0.408366
+EO iter  29/60  best J = 0.408366
+EO iter  30/60  best J = 0.373613
+EO iter  31/60  best J = 0.373613
+EO iter  32/60  best J = 0.373613
+EO iter  33/60  best J = 0.373613
+EO iter  34/60  best J = 0.373613
+EO iter  35/60  best J = 0.373613
+EO iter  36/60  best J = 0.373613
+EO iter  37/60  best J = 0.373613
+EO iter  38/60  best J = 0.37198
+EO iter  39/60  best J = 0.37198
+EO iter  40/60  best J = 0.37086
+EO iter  41/60  best J = 0.366447
+EO iter  42/60  best J = 0.360272
+EO iter  43/60  best J = 0.358521
+EO iter  44/60  best J = 0.352675
+EO iter  45/60  best J = 0.352675
+EO iter  46/60  best J = 0.346118
+EO iter  47/60  best J = 0.344843
+EO iter  48/60  best J = 0.344197
+EO iter  49/60  best J = 0.344197
+EO iter  50/60  best J = 0.344197
+EO iter  51/60  best J = 0.341598
+EO iter  52/60  best J = 0.341598
+EO iter  53/60  best J = 0.341598
+EO iter  54/60  best J = 0.341518
+EO iter  55/60  best J = 0.341323
+EO iter  56/60  best J = 0.340681
+EO iter  57/60  best J = 0.340681
+EO iter  58/60  best J = 0.340134
+EO iter  59/60  best J = 0.340111
+EO iter  60/60  best J = 0.339983
+
+Stage-1 tuning finished in 1.1 min, J = 0.3400
+     Kp: 76.6917
+     Ki: 999.3544
+     Kd: 8.2470
+    lam: 0.5414
+     mu: 0.7684
+    Kvi: 1.5077
+    Dvi: 6.0578
+     Tf: 0.0100
+
+With Tm = 20 ms: max Re = -0.001513, min damping ratio = 0.177
+With Tm = 50 ms: max Re = -0.001513, min damping ratio = 0.063
+Over alpha in [0.05, 1.50], Tm = 0 and 20 ms: max Re = -0.001513, min damping ratio = 0.105
+######## tune_stage1 done in 1.2 min ########
+
+
+######## tune_stage2 ########
+EO iter   1/50  best J = 3.59787
+EO iter   2/50  best J = 3.46435
+EO iter   3/50  best J = 3.39526
+EO iter   4/50  best J = 3.36061
+EO iter   5/50  best J = 3.36061
+EO iter   6/50  best J = 3.35417
+EO iter   7/50  best J = 3.35301
+EO iter   8/50  best J = 3.353
+EO iter   9/50  best J = 3.353
+EO iter  10/50  best J = 3.353
+EO iter  11/50  best J = 3.353
+EO iter  12/50  best J = 3.35268
+EO iter  13/50  best J = 3.35268
+EO iter  14/50  best J = 3.35234
+EO iter  15/50  best J = 3.35234
+EO iter  16/50  best J = 3.35141
+EO iter  17/50  best J = 3.35131
+EO iter  18/50  best J = 3.35131
+EO iter  19/50  best J = 3.35131
+EO iter  20/50  best J = 3.35129
+EO iter  21/50  best J = 3.3512
+EO iter  22/50  best J = 3.3512
+EO iter  23/50  best J = 3.3512
+EO iter  24/50  best J = 3.35112
+EO iter  25/50  best J = 3.35112
+EO iter  26/50  best J = 3.35104
+EO iter  27/50  best J = 3.35097
+EO iter  28/50  best J = 3.35095
+EO iter  29/50  best J = 3.35095
+EO iter  30/50  best J = 3.35093
+EO iter  31/50  best J = 3.35093
+EO iter  32/50  best J = 3.35093
+EO iter  33/50  best J = 3.35093
+EO iter  34/50  best J = 3.35093
+EO iter  35/50  best J = 3.35093
+EO iter  36/50  best J = 3.35093
+EO iter  37/50  best J = 3.35093
+EO iter  38/50  best J = 3.35093
+EO iter  39/50  best J = 3.35093
+EO iter  40/50  best J = 3.35093
+EO iter  41/50  best J = 3.35093
+EO iter  42/50  best J = 3.35093
+EO iter  43/50  best J = 3.35093
+EO iter  44/50  best J = 3.35093
+EO iter  45/50  best J = 3.35093
+EO iter  46/50  best J = 3.35093
+EO iter  47/50  best J = 3.35093
+EO iter  48/50  best J = 3.35093
+EO iter  49/50  best J = 3.35093
+EO iter  50/50  best J = 3.35093
+
+Stage-2 tuning finished in 3.5 min, J = 3.3509
+          s1: 0.3000
+          s2: 0.4986
+     f_small: 0.0050
+       f_big: 0.0500
+       a_min: 1
+        a_em: 1
+        a_hi: 1
+     soc_ref: 0.5000
+      soc_db: 0.1000
+          Kr: 0.2394
+    Prec_max: 0.0300
+      kh_min: 0.0100
+      kh_max: 0.4291
+         Ts2: 0.1000
+       tau_a: 2
+       tau_r: 30
+
+######## tune_stage2 done in 3.5 min ########
+
+
+######## run_validation ########
+       Scenario               Controller                 OS            US           IAE          ITAE       maxRoCoF     SOCmin      SOCmax      SOCend     Throughput_MWh    t_out_20_80_s    Unstable
+    ______________    ___________________________    __________    __________    __________    _________    ________    ________    ________    ________    ______________    _____________    ________
+
+    {'I'         }    {'A: EO-FOPI (paper)'     }     0.0026748    -0.0045577     0.0063783       0.2459    0.66262      0.49462     0.50938     0.50772       0.030242              0          false  
+    {'I'         }    {'B: EO-FOPI + handover'  }     0.0026846    -0.0045577     0.0070512      0.27491    0.66262      0.49573     0.50592     0.49956       0.027843              0          false  
+    {'I'         }    {'C: Stage 1 + handover'  }     0.0015303    -0.0026152     0.0017764      0.06475    0.66262      0.49488     0.50794     0.50363       0.029848              0          false  
+    {'I'         }    {'D: Two-stage (proposed)'}     0.0015306    -0.0026152     0.0017907     0.065426    0.66262      0.49489     0.50751     0.50267       0.029673              0          false  
+    {'II'        }    {'A: EO-FOPI (paper)'     }     0.0020742    -0.0041416     0.0024457     0.040017    0.60238      0.49994     0.52467     0.52467       0.026093              0          false  
+    {'II'        }    {'B: EO-FOPI + handover'  }     0.0020745    -0.0041545      0.002796     0.047272    0.60238      0.49994     0.50946       0.508       0.014514              0          false  
+    {'II'        }    {'C: Stage 1 + handover'  }     0.0011892     -0.002378    0.00076058     0.013144    0.60238      0.49994     0.51899     0.51899        0.02012              0          false  
+    {'II'        }    {'D: Two-stage (proposed)'}      0.001189    -0.0023796    0.00077664     0.013687    0.60238      0.49994     0.51545     0.51545       0.016394              0          false  
+    {'III'       }    {'A: EO-FOPI (paper)'     }    0.00026278     -0.006198     0.0024532     0.042265    0.90357      0.49537     0.50005      0.4969        0.01231              0          false  
+    {'III'       }    {'B: EO-FOPI + handover'  }    0.00029061     -0.006198      0.002674     0.049172    0.90357      0.49733     0.50198     0.49838       0.010863              0          false  
+    {'III'       }    {'C: Stage 1 + handover'  }    0.00027007    -0.0035598    0.00071255    0.0070093    0.90357      0.49589     0.50085     0.49769       0.012134              0          false  
+    {'III'       }    {'D: Two-stage (proposed)'}    0.00027007    -0.0035598    0.00071268    0.0070232    0.90357      0.49592     0.50084     0.49763       0.012103              0          false  
+    {'IV'        }    {'A: EO-FOPI (paper)'     }     0.0020753    -0.0041457      0.003087         0.13    0.60238      0.49476     0.51219     0.51219        0.03012              0          false  
+    {'IV'        }    {'B: EO-FOPI + handover'  }     0.0020692     -0.004148     0.0036303      0.15781    0.60238      0.49528     0.50672     0.50399       0.023611              0          false  
+    {'IV'        }    {'C: Stage 1 + handover'  }     0.0011897    -0.0023785    0.00086969     0.030968    0.60238      0.49468     0.50992     0.50991       0.027327              0          false  
+    {'IV'        }    {'D: Two-stage (proposed)'}     0.0011897    -0.0023786    0.00086789     0.030819    0.60238      0.49475     0.50932     0.50878       0.027045              0          false  
+    {'S5_lowSOC' }    {'A: EO-FOPI (paper)'     }    0.00051952      -0.15997        2.4677       710.72    0.60238     0.050109     0.14225    0.050109        0.16359            300          false  
+    {'S5_lowSOC' }    {'B: EO-FOPI + handover'  }    0.00051474    -0.0041484     0.0046949      0.39722    0.60238     0.050885    0.085179    0.050885       0.048557            300          false  
+    {'S5_lowSOC' }    {'C: Stage 1 + handover'  }    0.00021227       -0.1307        2.4508       574.31    0.60238         0.05     0.10642        0.05       0.091937            300          false  
+    {'S5_lowSOC' }    {'D: Two-stage (proposed)'}    0.00021219    -0.0023787      0.001155     0.072472    0.60238         0.07     0.11117     0.11117       0.046509            300          false  
+    {'S6_highSOC'}    {'A: EO-FOPI (paper)'     }       0.20372    -0.0062201        4.0022       938.62    0.90357      0.89199        0.95        0.95       0.097171            300          false  
+    {'S6_highSOC'}    {'B: EO-FOPI + handover'  }     0.0041477    -0.0062201     0.0048816      0.39778    0.90357      0.91866     0.94994     0.94994       0.043699            300          false  
+    {'S6_highSOC'}    {'C: Stage 1 + handover'  }       0.17681     -0.003568        3.1389       672.01    0.90357      0.90183        0.95        0.95       0.077473            300          false  
+    {'S6_highSOC'}    {'D: Two-stage (proposed)'}     0.0023787     -0.003568     0.0014332     0.072376    0.90357      0.88433        0.93     0.88433       0.046326            300          false  
+    {'S7_long'   }    {'A: EO-FOPI (paper)'     }     0.0046864    -0.0054908      0.051504       41.322    0.79766      0.49342     0.69209     0.69209        0.44761              0          false  
+    {'S7_long'   }    {'B: EO-FOPI + handover'  }     0.0046932    -0.0054978      0.058073        46.66    0.79766      0.48023     0.50667     0.49252         0.3104              0          false  
+    {'S7_long'   }    {'C: Stage 1 + handover'  }     0.0026866    -0.0031494      0.014304       11.332    0.79766      0.47669     0.52191     0.50752        0.40816              0          false  
+    {'S7_long'   }    {'D: Two-stage (proposed)'}      0.002687    -0.0031496      0.014476       11.476    0.79766       0.4847     0.51643     0.50951        0.38422              0          false  
+
+
+Parameter sensitivity, Scenario IV, two-stage (IAE):
+  H     -20%: 0.00087   nominal: 0.00087   +20%: 0.00087
+  D     -20%: 0.00087   nominal: 0.00087   +20%: 0.00087
+  Tg    -20%: 0.00087   nominal: 0.00087   +20%: 0.00087
+  Tt    -20%: 0.00087   nominal: 0.00087   +20%: 0.00087
+  Twt   -20%: 0.00089   nominal: 0.00087   +20%: 0.00085
+  Tpv   -20%: 0.00088   nominal: 0.00087   +20%: 0.00086
+  R     -20%: 0.00087   nominal: 0.00087   +20%: 0.00087
+  H x 0.5: IAE 0.00086, US -0.00345
+
+Measurement effects, Scenario IV, dt = 0.2 ms (IAE, diverged, limit cycle, max Re(eig), zeta):
+  Tm =  0 ms | EO-FOPI paper:   0.00314 (div 0, LC 0, Re -0.00173, zeta  0.262) | two-stage:   0.00089 (div 0, LC 0, Re -0.00151, zeta  0.816)
+  Tm = 10 ms | EO-FOPI paper:   1.47399 (div 0, LC 1, Re    +12.7, zeta -0.105) | two-stage:   0.00089 (div 0, LC 0, Re -0.00151, zeta  0.227)
+  Tm = 20 ms | EO-FOPI paper:   2.15755 (div 0, LC 1, Re    +14.3, zeta -0.148) | two-stage:   0.00107 (div 0, LC 0, Re -0.00151, zeta  0.177)
+  Tm = 50 ms | EO-FOPI paper:   3.68269 (div 0, LC 1, Re    +11.5, zeta -0.168) | two-stage:   0.00356 (div 0, LC 0, Re -0.00151, zeta  0.063)
+
+ESS time constant, Scenario IV, dt = 0.2 ms (IAE, limit cycle, max Re(eig), zeta):
+  Tinv = 10.0 s | two-stage IAE 0.00089, US -0.00257, LC 0, Re -0.00151, zeta 0.816
+  Tinv =  1.0 s | two-stage IAE 0.00024, US -0.00062, LC 0, Re -0.00151, zeta 0.309
+  Tinv =  0.2 s | two-stage IAE 0.07455, US -0.00172, LC 0, Re -0.00151, zeta 0.138
+######## run_validation done in 0.4 min ########
+
+
+######## stability_frozen ########
+Worst case over the (alpha, kh) grid: max Re(eig) and min damping ratio
+ Tm (ms) |  two-stage     zeta |   EO paper     zeta
+       0 |  -0.001512    0.389 |  -0.001728    0.262
+      10 |  -0.001512    0.227 |      12.73   -0.105
+      20 |  -0.001512    0.177 |      14.32   -0.148
+      50 |  -0.001512    0.051 |       11.5   -0.168
+######## stability_frozen done in 0.0 min ########
+
+All done. Results in results_20261113_1456
