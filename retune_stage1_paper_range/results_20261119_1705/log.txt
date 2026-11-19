@@ -1,0 +1,208 @@
+
+
+######## tune_stage1 ########
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 6 workers.
+EO iter   1/60  best J = 1.232
+EO iter   2/60  best J = 0.933394
+EO iter   3/60  best J = 0.796565
+EO iter   4/60  best J = 0.796565
+EO iter   5/60  best J = 0.688358
+EO iter   6/60  best J = 0.688358
+EO iter   7/60  best J = 0.685403
+EO iter   8/60  best J = 0.677443
+EO iter   9/60  best J = 0.677378
+EO iter  10/60  best J = 0.677378
+EO iter  11/60  best J = 0.661647
+EO iter  12/60  best J = 0.657843
+EO iter  13/60  best J = 0.644941
+EO iter  14/60  best J = 0.644941
+EO iter  15/60  best J = 0.639491
+EO iter  16/60  best J = 0.637382
+EO iter  17/60  best J = 0.637382
+EO iter  18/60  best J = 0.636965
+EO iter  19/60  best J = 0.636885
+EO iter  20/60  best J = 0.636885
+EO iter  21/60  best J = 0.636885
+EO iter  22/60  best J = 0.636843
+EO iter  23/60  best J = 0.636842
+EO iter  24/60  best J = 0.63679
+EO iter  25/60  best J = 0.63679
+EO iter  26/60  best J = 0.63677
+EO iter  27/60  best J = 0.636769
+EO iter  28/60  best J = 0.636756
+EO iter  29/60  best J = 0.636744
+EO iter  30/60  best J = 0.636744
+EO iter  31/60  best J = 0.636744
+EO iter  32/60  best J = 0.636744
+EO iter  33/60  best J = 0.636742
+EO iter  34/60  best J = 0.636738
+EO iter  35/60  best J = 0.636738
+EO iter  36/60  best J = 0.636736
+EO iter  37/60  best J = 0.636736
+EO iter  38/60  best J = 0.636736
+EO iter  39/60  best J = 0.636736
+EO iter  40/60  best J = 0.636736
+EO iter  41/60  best J = 0.636736
+EO iter  42/60  best J = 0.636736
+EO iter  43/60  best J = 0.636736
+EO iter  44/60  best J = 0.636736
+EO iter  45/60  best J = 0.636736
+EO iter  46/60  best J = 0.636736
+EO iter  47/60  best J = 0.636736
+EO iter  48/60  best J = 0.636736
+EO iter  49/60  best J = 0.636736
+EO iter  50/60  best J = 0.636736
+EO iter  51/60  best J = 0.636735
+EO iter  52/60  best J = 0.636735
+EO iter  53/60  best J = 0.636735
+EO iter  54/60  best J = 0.636735
+EO iter  55/60  best J = 0.636735
+EO iter  56/60  best J = 0.636735
+EO iter  57/60  best J = 0.636735
+EO iter  58/60  best J = 0.636735
+EO iter  59/60  best J = 0.636735
+EO iter  60/60  best J = 0.636735
+
+Stage-1 tuning finished in 4.1 min, J = 0.6367
+     Kp: 200.0000
+     Ki: 200
+     Kd: 20.0000
+    lam: 0.3814
+     mu: 0.2956
+    Kvi: 5
+    Dvi: 5.0000
+     Tf: 0
+
+With Tm = 20 ms: max Re = -0.001248, min damping ratio = 0.153
+With Tm = 50 ms: max Re = -0.001248, min damping ratio = 0.100
+Over alpha in [0.05, 1.50], Tm = 0 and 20 ms: max Re = -0.001246, min damping ratio = 0.134
+Direct df -> ESS gain G = 177.1 p.u./Hz (paper EO-FOPI: 53.1), dt*G/(2H) = 0.53 at alpha = 1
+######## tune_stage1 done in 4.2 min ########
+
+
+######## check_stage2_gates ########
+Run-4 stage 2 with the new stage 1 (alpha, kh, Tm -> max Re, zeta):
+  alpha 1.00  kh 0.019  Tm 20 ms -> Re -0.001248  zeta 0.153  (need >= 0.10)  ok
+  alpha 1.00  kh 1.299  Tm 20 ms -> Re -0.001248  zeta 0.153  (need >= 0.10)  ok
+  alpha 1.50  kh 0.019  Tm 20 ms -> Re -0.001248  zeta 0.134  (need >= 0.10)  ok
+  alpha 1.50  kh 1.299  Tm 20 ms -> Re -0.001248  zeta 0.134  (need >= 0.10)  ok
+  alpha 1.00  kh 0.019  Tm 50 ms -> Re -0.001248  zeta 0.100  (need >= 0.05)  ok
+  alpha 1.00  kh 1.299  Tm 50 ms -> Re -0.001248  zeta 0.100  (need >= 0.05)  ok
+  alpha 1.50  kh 0.019  Tm 50 ms -> Re -0.001248  zeta 0.091  (need >= 0.05)  ok
+  alpha 1.50  kh 1.299  Tm 50 ms -> Re -0.001248  zeta 0.091  (need >= 0.05)  ok
+All stage-2 gates pass: reusing the run-4 stage 2 is valid.
+######## check_stage2_gates done in 0.0 min ########
+
+
+######## run_validation ########
+       Scenario               Controller                 OS            US            IAE         ITAE      maxRoCoF     SOCmin      SOCmax      SOCend     Throughput_MWh    t_out_20_80_s    Unstable
+    ______________    ___________________________    __________    ___________    _________    ________    ________    ________    ________    ________    ______________    _____________    ________
+
+    {'I'         }    {'A: EO-FOPI (paper)'     }     0.0011733      -0.001979    0.0066012     0.25485    0.66866      0.49456     0.50989     0.50784       0.031187              0          false  
+    {'I'         }    {'O: OSTIT2F-FOPI (paper)'}     0.0011754      -0.001977    0.0066003     0.25484    0.66866      0.49456     0.50989     0.50784       0.031187              0          false  
+    {'I'         }    {'B: EO-FOPI + handover'  }     0.0011831      -0.001979    0.0072944      0.2849    0.66866      0.49568     0.50604     0.49946       0.028176              0          false  
+    {'I'         }    {'C: Stage 1 + handover'  }     0.0004265    -0.00072535    0.0039867     0.16058    0.66866      0.49505     0.50762     0.50144        0.03019              0          false  
+    {'I'         }    {'D: Two-stage (proposed)'}     0.0004265    -0.00072535    0.0039867     0.16058    0.66866      0.49505     0.50762     0.50144        0.03019              0          false  
+    {'II'        }    {'A: EO-FOPI (paper)'     }    0.00089338     -0.0017799    0.0025115     0.04125     0.6024      0.49994     0.52467     0.52467       0.026093              0          false  
+    {'II'        }    {'O: OSTIT2F-FOPI (paper)'}    0.00089295      -0.001774    0.0025111    0.041245     0.6024      0.49994     0.52467     0.52467       0.026093              0          false  
+    {'II'        }    {'B: EO-FOPI + handover'  }    0.00089363     -0.0017927     0.002867    0.048566     0.6024      0.49994     0.50946       0.508        0.01451              0          false  
+    {'II'        }    {'C: Stage 1 + handover'  }    0.00032501    -0.00064533    0.0015236    0.021716     0.6024      0.49994     0.51513     0.51513       0.016056              0          false  
+    {'II'        }    {'D: Two-stage (proposed)'}    0.00032501    -0.00064533    0.0015236    0.021716     0.6024      0.49994     0.51513     0.51513       0.016056              0          false  
+    {'III'       }    {'A: EO-FOPI (paper)'     }    0.00028218     -0.0026639    0.0025192    0.042859    0.90359      0.49537     0.50005      0.4969        0.01231              0          false  
+    {'III'       }    {'O: OSTIT2F-FOPI (paper)'}    0.00028186     -0.0026603    0.0025175    0.042855    0.90359      0.49537     0.50005      0.4969        0.01231              0          false  
+    {'III'       }    {'B: EO-FOPI + handover'  }    0.00031093     -0.0026639    0.0027443    0.049894    0.90359      0.49733     0.50198     0.49838       0.010863              0          false  
+    {'III'       }    {'C: Stage 1 + handover'  }    0.00010404    -0.00097571    0.0015153    0.032083    0.90359      0.49631     0.50135     0.49809       0.011905              0          false  
+    {'III'       }    {'D: Two-stage (proposed)'}    0.00010404    -0.00097571    0.0015153    0.032083    0.90359      0.49631     0.50135     0.49809       0.011905              0          false  
+    {'IV'        }    {'A: EO-FOPI (paper)'     }    0.00089447     -0.0017839    0.0031648     0.13271     0.6024      0.49476     0.51219     0.51219       0.030119              0          false  
+    {'IV'        }    {'O: OSTIT2F-FOPI (paper)'}    0.00089405     -0.0017815    0.0031642     0.13271     0.6024      0.49476     0.51219     0.51219       0.030119              0          false  
+    {'IV'        }    {'B: EO-FOPI + handover'  }    0.00088834     -0.0017863    0.0037138     0.16075     0.6024      0.49528     0.50672     0.50399       0.023609              0          false  
+    {'IV'        }    {'C: Stage 1 + handover'  }    0.00033232    -0.00065275    0.0020824    0.094953     0.6024      0.49473     0.50893     0.50807       0.026522              0          false  
+    {'IV'        }    {'D: Two-stage (proposed)'}    0.00033232    -0.00065275    0.0020824    0.094953     0.6024      0.49473     0.50893     0.50807       0.026522              0          false  
+    {'S5_lowSOC' }    {'A: EO-FOPI (paper)'     }    0.00053873       -0.15996       2.4677       710.7     0.6024     0.050109     0.14225    0.050109        0.16359            300          false  
+    {'S5_lowSOC' }    {'O: OSTIT2F-FOPI (paper)'}    0.00053888       -0.15996       2.4677       710.7     0.6024     0.050109     0.14225    0.050109        0.16359            300          false  
+    {'S5_lowSOC' }    {'B: EO-FOPI + handover'  }    0.00053401     -0.0017866    0.0047791     0.40243     0.6024     0.050885    0.085178    0.050885       0.048556            300          false  
+    {'S5_lowSOC' }    {'C: Stage 1 + handover'  }     0.0002823       -0.10011       1.8794       423.4     0.6024         0.05    0.098556        0.05       0.076187            300          false  
+    {'S5_lowSOC' }    {'D: Two-stage (proposed)'}    0.00022001    -0.00065046    0.0017195     0.11149     0.6024         0.07     0.11251     0.11251       0.045864            300          false  
+    {'S6_highSOC'}    {'A: EO-FOPI (paper)'     }        0.2037     -0.0026775       4.0023      938.63    0.90359        0.892        0.95        0.95        0.09716            300          false  
+    {'S6_highSOC'}    {'O: OSTIT2F-FOPI (paper)'}        0.2037     -0.0026737       4.0023      938.63    0.90359        0.892        0.95        0.95        0.09716            300          false  
+    {'S6_highSOC'}    {'B: EO-FOPI + handover'  }      0.001786     -0.0026775    0.0049932       0.403    0.90359      0.91866     0.94994     0.94994       0.043699            300          false  
+    {'S6_highSOC'}    {'C: Stage 1 + handover'  }       0.13788     -0.0009816       2.3742      507.76    0.90359      0.90816        0.95        0.95       0.064782            300          false  
+    {'S6_highSOC'}    {'D: Two-stage (proposed)'}    0.00065049    -0.00095826    0.0020141     0.11163    0.90359      0.88263        0.93     0.88263       0.046013            300          false  
+    {'S7_long'   }    {'A: EO-FOPI (paper)'     }     0.0020186     -0.0023635     0.052749      42.308    0.79768      0.49342     0.69209     0.69209        0.44757              0          false  
+    {'S7_long'   }    {'O: OSTIT2F-FOPI (paper)'}      0.002023     -0.0023581     0.052749      42.309    0.79768      0.49342     0.69209     0.69209        0.44757              0          false  
+    {'S7_long'   }    {'B: EO-FOPI + handover'  }     0.0020253     -0.0023705     0.059437      47.736    0.79768      0.48024     0.50667     0.49252        0.31034              0          false  
+    {'S7_long'   }    {'C: Stage 1 + handover'  }     0.0007369    -0.00086252      0.03403      27.538    0.79768      0.47453     0.51548     0.49924        0.38296              0          false  
+    {'S7_long'   }    {'D: Two-stage (proposed)'}     0.0007369    -0.00086252      0.03403      27.538    0.79768      0.47453     0.51548     0.49924        0.38296              0          false  
+
+
+Parameter sensitivity, Scenario IV, two-stage (IAE):
+  H     -20%: 0.00208   nominal: 0.00208   +20%: 0.00208
+  D     -20%: 0.00208   nominal: 0.00208   +20%: 0.00208
+  Tg    -20%: 0.00208   nominal: 0.00208   +20%: 0.00208
+  Tt    -20%: 0.00208   nominal: 0.00208   +20%: 0.00208
+  Twt   -20%: 0.00208   nominal: 0.00208   +20%: 0.00208
+  Tpv   -20%: 0.00207   nominal: 0.00208   +20%: 0.00209
+  R     -20%: 0.00208   nominal: 0.00208   +20%: 0.00208
+  H x 0.5: IAE 0.00208, US -0.00065
+
+Measurement effects, Scenario IV, dt = 0.2 ms (IAE, diverged, limit cycle, max Re(eig), zeta):
+  Tm =  0 ms | EO-FOPI paper:   0.00317 (div 0, LC 0, Re -2.31e-15, zeta  1.000) | OSTIT2F paper:   0.00317 (div 0, LC 0) | two-stage:   0.00209 (div 0, LC 0, Re -0.00125, zeta  1.000)
+  Tm = 10 ms | EO-FOPI paper:   0.00317 (div 0, LC 0, Re -1.25e-14, zeta  0.263) | OSTIT2F paper:   0.00317 (div 0, LC 0) | two-stage:   0.00209 (div 0, LC 0, Re -0.00125, zeta  0.207)
+  Tm = 20 ms | EO-FOPI paper:   0.00319 (div 0, LC 0, Re -5.89e-15, zeta  0.176) | OSTIT2F paper:   0.00319 (div 0, LC 0) | two-stage:   0.00211 (div 0, LC 0, Re -0.00125, zeta  0.153)
+  Tm = 50 ms | EO-FOPI paper:   0.00372 (div 0, LC 0, Re +2.79e-14, zeta  0.095) | OSTIT2F paper:   0.00376 (div 0, LC 0) | two-stage:   0.00231 (div 0, LC 0, Re -0.00125, zeta  0.100)
+
+ESS time constant, Scenario IV (IAE, limit cycle, max Re(eig), zeta):
+  Tinv = 10.0 s (dt = 1.3e-04 s) | two-stage IAE 0.00209, US -0.00066, LC 0, Re -0.00125, zeta 1.000
+  Tinv =  1.0 s (dt = 1.3e-05 s) | two-stage IAE 0.00145, US -0.00006, LC 0, Re -0.00125, zeta 1.000
+  Tinv =  0.2 s (dt = 2.5e-06 s) | two-stage IAE 0.00141, US -0.00003, LC 0, Re -0.00125, zeta 1.000
+######## run_validation done in 4.6 min ########
+
+
+######## compare_paper ########
+Like-for-like comparison with the base paper (dt = 0.2 ms, exact VI block)
+    Scenario        Source               Controller               OS            US            IAE         ITAE      OS_pct_vs_EO    US_pct_vs_EO    IAE_pct_vs_EO
+    ________    ______________    ________________________    __________    ___________    _________    ________    ____________    ____________    _____________
+
+    {'I'  }     {'Paper'     }    {'EO-FOPI'             }         0.001       -0.00185      0.00722         NaN             0               0                0  
+    {'I'  }     {'Paper'     }    {'OSTIT2F-FOPI'        }       0.00077       -0.00133      0.00574         NaN           -23         -28.108          -20.499  
+    {'I'  }     {'This model'}    {'EO-FOPI'             }     0.0011712     -0.0019737    0.0066034     0.25493             0               0                0  
+    {'I'  }     {'This model'}    {'OSTIT2F-FOPI'        }     0.0011731     -0.0019716    0.0066025     0.25493       0.16446        -0.10584        -0.012892  
+    {'I'  }     {'This model'}    {'Two-stage (proposed)'}    0.00042955    -0.00073023    0.0040023     0.16116       -63.322         -63.003          -39.391  
+    {'II' }     {'Paper'     }    {'EO-FOPI'             }       0.00069       -0.00154       0.0027         NaN             0               0                0  
+    {'II' }     {'Paper'     }    {'OSTIT2F-FOPI'        }        0.0005       -0.00111      0.00213         NaN       -27.536         -27.922          -21.111  
+    {'II' }     {'This model'}    {'EO-FOPI'             }    0.00089106     -0.0017752    0.0025124    0.041268             0               0                0  
+    {'II' }     {'This model'}    {'OSTIT2F-FOPI'        }     0.0008908     -0.0017699    0.0025119    0.041263     -0.029543        -0.30032        -0.018486  
+    {'II' }     {'This model'}    {'Two-stage (proposed)'}    0.00032722    -0.00064977    0.0015291    0.021797       -63.277         -63.398          -39.139  
+    {'III'}     {'Paper'     }    {'EO-FOPI'             }       0.00043       -0.00239      0.00285         NaN             0               0                0  
+    {'III'}     {'Paper'     }    {'OSTIT2F-FOPI'        }       0.00031       -0.00173      0.00225         NaN       -27.907         -27.615          -21.053  
+    {'III'}     {'This model'}    {'EO-FOPI'             }    0.00028234     -0.0026561    0.0025201    0.042873             0               0                0  
+    {'III'}     {'This model'}    {'OSTIT2F-FOPI'        }    0.00028202     -0.0026524    0.0025184    0.042869      -0.11171        -0.13981        -0.067965  
+    {'III'}     {'This model'}    {'Two-stage (proposed)'}    0.00010458    -0.00098219    0.0015214    0.032176       -62.958         -63.022           -39.63  
+    {'IV' }     {'Paper'     }    {'EO-FOPI'             }       0.00076       -0.00162      0.00352         NaN             0               0                0  
+    {'IV' }     {'Paper'     }    {'OSTIT2F-FOPI'        }       0.00055       -0.00116       0.0028         NaN       -27.632         -28.395          -20.455  
+    {'IV' }     {'This model'}    {'EO-FOPI'             }    0.00089215     -0.0017793     0.003166     0.13276             0               0                0  
+    {'IV' }     {'This model'}    {'OSTIT2F-FOPI'        }     0.0008919     -0.0017769    0.0031654     0.13276     -0.028389        -0.13676        -0.019925  
+    {'IV' }     {'This model'}    {'Two-stage (proposed)'}    0.00033453    -0.00065718    0.0020884     0.09519       -62.503         -63.065          -34.038  
+
+
+Model agreement, this model's EO-FOPI vs the paper's EO-FOPI (% difference):
+  I    |OS|  +17.1%   |US|   +6.7%   IAE   -8.5%
+  II   |OS|  +29.1%   |US|  +15.3%   IAE   -6.9%
+  III  |OS|  -34.3%   |US|  +11.1%   IAE  -11.6%
+  IV   |OS|  +17.4%   |US|   +9.8%   IAE  -10.1%
+
+Direct df -> ESS power gain G (p.u./Hz): EO-FOPI 53.1, OSTIT2F-FOPI 53.1 (at rest), two-stage 177.1
+######## compare_paper done in 0.7 min ########
+
+
+######## stability_frozen ########
+Worst case over the (alpha, kh) grid: max Re(eig) and min damping ratio
+ Tm (ms) |  two-stage     zeta |   EO paper     zeta
+       0 |  -0.001243    0.596 |  -0.001729    0.596
+      10 |  -0.001243    0.178 |  -0.001729    0.214
+      20 |  -0.001243    0.134 |  -0.001729    0.143
+      50 |  -0.001243    0.091 |  -0.001729    0.077
+######## stability_frozen done in 0.0 min ########
+
+All done. Results in C:\Users\aryan\Downloads\matlab project\retune_stage1_paper_range\results_20261119_1705
